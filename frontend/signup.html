@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Minimalist Review Analysis Landing Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .gradient-button {
+            background: linear-gradient(135deg, #135bec 0%, #7c3aed 100%);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex flex-col font-display">
+<header class="flex items-center justify-between border-b border-solid border-[#e7ebf3] dark:border-slate-800 px-10 py-5 bg-background-light dark:bg-background-dark">
+<div class="flex items-center text-[#0d121b] dark:text-white">
+<h2 class="text-[#0d121b] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">ReviewAI</h2>
+</div>
+</header>
+<main class="flex-1 flex items-center justify-center p-6 sm:p-12">
+<div class="w-full max-w-[500px]">
+<div class="bg-white dark:bg-[#1a2133] p-8 sm:p-12 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-[#e7ebf3] dark:border-slate-800">
+<div class="text-center mb-10">
+<h1 class="text-[#0d121b] dark:text-white text-3xl font-bold tracking-tight mb-3">ReviewAI</h1>
+<h2 class="text-[#4c669a] dark:text-slate-400 text-base font-medium leading-snug">
+                        AI-powered review insights for faster decisions.
+                    </h2>
+</div>
+<form class="space-y-5">
+<div class="flex flex-col gap-2">
+<label class="text-[#0d121b] dark:text-slate-200 text-sm font-semibold">Email Address</label>
+<input class="flex w-full rounded-lg text-[#0d121b] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 border border-[#cfd7e7] dark:border-slate-700 bg-[#f8f9fc] dark:bg-slate-900/50 focus:border-primary h-12 placeholder:text-[#4c669a] dark:placeholder:text-slate-500 px-4 text-sm font-normal" placeholder="e.g., researcher@university.edu" type="email"/>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<label class="text-[#0d121b] dark:text-slate-200 text-sm font-semibold">Password</label>
+</div>
+<input class="flex w-full rounded-lg text-[#0d121b] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/20 border border-[#cfd7e7] dark:border-slate-700 bg-[#f8f9fc] dark:bg-slate-900/50 focus:border-primary h-12 placeholder:text-[#4c669a] dark:placeholder:text-slate-500 px-4 text-sm font-normal" placeholder="••••••••" type="password"/>
+</div>
+<button class="gradient-button w-full h-12 rounded-lg text-white font-bold text-sm tracking-wide shadow-md transition-all active:scale-[0.98] mt-4" type="submit">
+                        Log In
+                    </button>
+<div class="text-center mt-8">
+<p class="text-[#4c669a] dark:text-slate-400 text-sm font-normal">
+                            Don't have an account? 
+                            <a class="text-primary font-bold hover:underline ml-1" href="#">Sign up</a>
+</p>
+</div>
+</form>
+</div>
+</div>
+</main>
+<div class="fixed top-0 right-0 -z-10 opacity-20 dark:opacity-5">
+<svg data-alt="abstract geometric pattern of blue circles" fill="none" height="600" viewBox="0 0 600 600" width="600" xmlns="http://www.w3.org/2000/svg">
+<circle cx="450" cy="150" fill="url(#paint0_radial)" r="300"></circle>
+<defs>
+<radialGradient cx="0" cy="0" gradientTransform="translate(450 150) rotate(90) scale(300)" gradientUnits="userSpaceOnUse" id="paint0_radial" r="1">
+<stop stop-color="#135bec"></stop>
+<stop offset="1" stop-color="#135bec" stop-opacity="0"></stop>
+</radialGradient>
+</defs>
+</svg>
+</div>
+
+</body></html>
