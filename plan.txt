@@ -1,0 +1,42 @@
+customer-review-summarizer/
+│
+├── frontend/
+│   ├── login.html
+│   ├── signup.html
+│   ├── dashboard.html
+│   └── results.html
+│
+├── backend/
+│   ├── app.py
+│   ├── requirements.txt
+│   │
+│   ├── api/
+│   │   └── routes.py
+│   │
+│   ├── pipeline/
+│   │   ├── __init__.py
+│   │   ├── ingestion.py
+│   │   ├── preprocessing.py
+│   │   ├── embeddings.py
+│   │   ├── aspect_mining.py
+│   │   ├── sentiment.py
+│   │   └── summarization.py
+│   │
+│   ├── models/
+│   │   ├── embedding_model/
+│   │   └── sentiment_model/
+│   │
+│   ├── utils/
+│   │   ├── file_reader.py
+│   │   ├── text_cleaner.py
+│   │   └── helpers.py
+│   │
+│   ├── data/
+│   │   ├── uploads/
+│   │   └── outputs/
+│   │
+│   └── config/
+│       └── settings.py
+│
+├── README.md
+└── .gitignore
