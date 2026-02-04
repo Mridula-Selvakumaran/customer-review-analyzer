@@ -9,9 +9,14 @@ customer-review-summarizer/
 ├── backend/
 │   ├── app.py
 │   ├── requirements.txt
+│   ├── .env
 │   │
 │   ├── api/
 │   │   └── routes.py
+│   │
+│   ├── supabase/
+│   │   ├── __init__.py
+│   │   └── client.py
 │   │
 │   ├── pipeline/
 │   │   ├── __init__.py
