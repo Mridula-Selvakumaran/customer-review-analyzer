@@ -14,9 +14,14 @@ customer-review-summarizer/
 │   ├── api/
 │   │   └── routes.py
 │   │
-│   ├── supabase/
+│   ├── auth/
 │   │   ├── __init__.py
-│   │   └── client.py
+│   │   └── auth.py
+│   │
+│   ├── database/
+│   │   ├── __init__.py
+│   │   ├── db.py          # MySQL connection + session helpers
+│   │   └── schema.sql     # tables definition
 │   │
 │   ├── pipeline/
 │   │   ├── __init__.py
