@@ -58,19 +58,32 @@ backend/data/outputs/*
 !backend/data/uploads/.gitkeep
 !backend/data/outputs/.gitkeep
 
-# Pretrained Models (these will be downloaded via code, not committed)
-# Add specific model files/cache directories used by transformers, sentence-transformers, etc.
-backend/models/embedding_model/*
-backend/models/sentiment_model/*
-# Keep the directories and any config/readme files
-!backend/models/embedding_model/.gitkeep
-!backend/models/sentiment_model/.gitkeep
-!backend/models/**/*.md
-!backend/models/**/*.json
+# Trained Models (your custom trained models)
+backend/models/sentiment_model/*.pkl
+backend/models/sentiment_model/*.joblib
+backend/models/sentiment_model/*.h5
+backend/models/sentiment_model/*.pt
+backend/models/sentiment_model/*.pth
+backend/models/sentiment_model/checkpoints/
 
-# Hugging Face cache (if models are cached locally)
+# Pretrained embedding models cache
+backend/models/embedding_model/cache/
+backend/models/embedding_model/*.bin
+
+# Keep model configs and training scripts
+!backend/models/**/*.py
+!backend/models/**/*.json
+!backend/models/**/*.md
+!backend/models/**/.gitkeep
+
+# Hugging Face cache
 .cache/
 huggingface/
+
+# Training artifacts
+wandb/
+mlruns/
+tensorboard_logs/
 
 # Logs
 *.log
@@ -94,7 +107,7 @@ htmlcov/
 temp/
 tmp/
 
-# Database (if using SQLite locally for testing)
+# Database
 *.db
 *.sqlite
 *.sqlite3
